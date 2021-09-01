@@ -1,13 +1,115 @@
-body{
-    margin: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: var(--ff-main) !important;
+	font: inherit;
+	vertical-align: baseline;
+}
+:root{
+    --ff-main: 'Spartan', sans-serif;
+    
+    --clr-grey: hsl(0, 0%, 63%);
+    --clr-dark: hsl(0, 0%, 27%);
+
 }
 
+/* typography */
 
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1ch;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+p{
+    font-size: 0.75rem;
+    color: var(--clr-grey);
+}
+/* layout */
 
-.slider{
+.image{
+    width: 55%;
+    height: 50%;
+}
+.main{
     display: flex;
+}
+.text{
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-inline: 6rem;
+}
+.lower{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.text2{
+    padding: 3rem;
+}
+.text2 > *{
+    margin-bottom: 1rem;
+}
+.text > *{
+    margin-bottom: 1rem;
 }
 .header{
     border-color: tomato;
-    background-color: green;
+    background-color: transparent;
+    position: absolute;
+}
+.toggle{
+    background-color: black;
+    padding: 1.25rem;
+}
+.toggle:hover{
+    background-color: var(--clr-grey);
+    cursor: pointer;
+}
+.buttons{
+    position: absolute;
+    z-index: 2;
+    margin-top: -65px;
+    margin-left: 55%;
+}
+.header{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem;
+}
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem;
+}
+a:hover{
+    cursor: pointer;
 }
