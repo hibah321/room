@@ -13,7 +13,7 @@ const lower = () => {
                     or anything in between. Product specialists are available to help you create your dream space.
                 </p>
             </div>
-            <img className = "image2" src={process.env.PUBLIC_URL + "/images/image-about-light.jpg"} alt="" />
+            <img className = "image1" src={process.env.PUBLIC_URL + "/images/image-about-light.jpg"} alt="" />
         </div>
     )
 }
